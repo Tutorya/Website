@@ -1,0 +1,20 @@
+# État local des présentations et références de travail, pas des assets du site.
+.impeccable/questions/
+.impeccable/references/
+.impeccable/review/
+
+# Secrets et dépendances éventuelles : ne jamais publier avec la vitrine.
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+secrets/
+node_modules/
+
+# Sorties générées et résultats de tests locaux.
+dist/
+test-results/
+playwright-report/
+*.log

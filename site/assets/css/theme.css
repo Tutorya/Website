@@ -1,0 +1,110 @@
+/* Tutelia — refonte premium autorisée le 09/09/2026.
+   Les noms sémantiques sont conservés, la palette initiale est remplacée. */
+:root {
+  color-scheme: light;
+  --cp-bg: #f4f6f7;
+  --cp-bg-elevated: #eaf0f3;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f8fafb;
+  --cp-border: #d8e0e6;
+  --cp-border-strong: #9aa8b5;
+  --cp-border-control: #7c8b99;
+  --cp-text: #142b45;
+  --cp-text-muted: #526278;
+  --cp-text-soft: #617185;
+  --cp-accent: #142b45;
+  --cp-accent-hover: #274662;
+  --cp-accent-fg: #ffffff;
+  --cp-accent-soft: #e5ecf1;
+  --cp-champagne: #ddc9a3;
+  --cp-champagne-dark: #765a2d;
+  --cp-champagne-soft: #f3ede2;
+  --cp-ink: #142b45;
+  --cp-ink-deep: #102238;
+  --cp-ink-muted: #b9c9d9;
+  --cp-ink-line: #425973;
+  --cp-on-ink: #f4f6f7;
+  --cp-danger: #a72e3e;
+  --cp-danger-soft: #fff1f2;
+  --cp-shadow: 0 24px 70px rgba(16, 34, 56, 0.10);
+  --cp-selection: #ddc9a3;
+  --cp-selection-text: #142b45;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #101e30;
+  --cp-bg-elevated: #172b41;
+  --cp-surface: #1b3048;
+  --cp-surface-soft: #15273c;
+  --cp-border: #354a60;
+  --cp-border-strong: #698097;
+  --cp-border-control: #8b9fb4;
+  --cp-text: #edf2f6;
+  --cp-text-muted: #b4c3d2;
+  --cp-text-soft: #a9b9ca;
+  --cp-accent: #ddc9a3;
+  --cp-accent-hover: #ecdcbd;
+  --cp-accent-fg: #142b45;
+  --cp-accent-soft: #2d3e50;
+  --cp-champagne-dark: #ddc9a3;
+  --cp-champagne-soft: #303b47;
+  --cp-ink: #102238;
+  --cp-ink-deep: #0b192a;
+  --cp-danger: #ffb2b9;
+  --cp-danger-soft: #3e2938;
+  --cp-shadow: 0 24px 70px rgba(0, 0, 0, 0.20);
+}
+
+@font-face {
+  font-family: "Libre Bodoni";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/libre-bodoni-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Libre Bodoni";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/libre-bodoni-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/public-sans-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/public-sans-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/public-sans-latin-600-normal.woff2") format("woff2");
+}
+
+:root {
+  --font-body: "Public Sans", "Segoe UI", sans-serif;
+  --font-heading: "Libre Bodoni", Georgia, serif;
+  --text-small: 0.875rem;
+  --text-nav: 0.9375rem;
+  --text-body: 1rem;
+  --text-intro: clamp(1rem, calc(0.875rem + 0.25vw), 1.125rem);
+  --content-width: 76rem;
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  --space-section: clamp(4.5rem, 8vw, 7.5rem);
+  --radius-control: 0.5rem;
+  --radius-panel: 1rem;
+  --duration-fast: 180ms;
+  --duration-slow: 320ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

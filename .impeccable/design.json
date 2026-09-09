@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-09",
+  "title": "Tutelia — design de la refonte premium",
+  "extensions": {
+    "colorMeta": {
+      "cp-bg": { "role": "neutral", "displayName": "Blanc minéral" },
+      "cp-bg-elevated": { "role": "neutral", "displayName": "Fond minéral des rôles et de la FAQ" },
+      "cp-surface": { "role": "neutral", "displayName": "Surface de méthode et de formulaire" },
+      "cp-surface-soft": { "role": "neutral", "displayName": "Surface des champs" },
+      "cp-border": { "role": "neutral", "displayName": "Filet discret" },
+      "cp-border-strong": { "role": "neutral", "displayName": "Filet structurant" },
+      "cp-border-control": { "role": "neutral", "displayName": "Bordure de contrôle" },
+      "cp-text": { "role": "neutral", "displayName": "Texte encre" },
+      "cp-text-muted": { "role": "neutral", "displayName": "Texte ardoise" },
+      "cp-text-soft": { "role": "neutral", "displayName": "Texte secondaire des étapes" },
+      "cp-accent": { "role": "primary", "displayName": "Action encre, champagne en thème sombre" },
+      "cp-accent-hover": { "role": "primary", "displayName": "Survol de l’action" },
+      "cp-accent-fg": { "role": "neutral", "displayName": "Texte sur action" },
+      "cp-champagne": { "role": "secondary", "displayName": "Champagne sur encre" },
+      "cp-champagne-dark": { "role": "secondary", "displayName": "Champagne sombre sur fond clair" },
+      "cp-ink": { "role": "primary", "displayName": "Encre du folio et de la soutenance" },
+      "cp-ink-deep": { "role": "primary", "displayName": "Encre profonde du pied de page" },
+      "cp-ink-muted": { "role": "neutral", "displayName": "Texte atténué sur encre" },
+      "cp-ink-line": { "role": "neutral", "displayName": "Filet sur encre" },
+      "cp-on-ink": { "role": "neutral", "displayName": "Texte minéral sur encre" },
+      "cp-danger": { "displayName": "Erreur de saisie" },
+      "cp-danger-soft": { "displayName": "Fond du résumé d’erreurs" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Titre principal éditorial", "purpose": "Libre Bodoni 400 ; base h1, avec surcharges de l’ouverture à 56, 40 et 24rem." },
+      "headline": { "displayName": "Titre de section", "purpose": "Libre Bodoni 400 normale/italique ; introduction de méthode à 2.625rem à 56rem et moins, puis clamp(2.25rem, 8vw, 3rem) à 40rem et moins." },
+      "title": { "displayName": "Sous-titre fonctionnel", "purpose": "Public Sans 500 pour h3 ; le titre du formulaire est une exception éditoriale en Libre Bodoni 400." },
+      "body": { "displayName": "Texte courant", "purpose": "Public Sans 400, --text-body à 1rem (16px), interligne hérité 1.75 ; FAQ et corps sans réduction mobile." },
+      "small": { "displayName": "Texte secondaire", "purpose": "--text-small à 0.875rem (14px) ; notes, erreurs, compte-rendu, légendes, repères et pied de page. Interlignes locaux conservés." },
+      "nav": { "displayName": "Navigation", "purpose": "--text-nav à 0.9375rem (15px) ; liens de navigation et bouton Menu." },
+      "intro": { "displayName": "Introduction", "purpose": "--text-intro : clamp(1rem, calc(0.875rem + 0.25vw), 1.125rem), soit 16–18px pour une base de 16px ; introductions de sections, promesse en 500, description d’ouverture à interligne 1.8." },
+      "label": { "displayName": "Libellé de champ", "purpose": "Public Sans 500, --text-body (16px) ; mention facultative en 400, --text-small (14px)." },
+      "button": { "displayName": "Action standard", "purpose": "Public Sans 500, --text-body (16px), interligne 1.4 ; écart texte/icône de 0.75rem." },
+      "button-small": { "displayName": "Action compacte", "purpose": "Public Sans 500, --text-nav (15px), interligne 1.4 ; padding horizontal réduit à 0.875rem à 24rem et moins, comme tous les boutons .button." }
+    },
+    "shadows": [
+      { "name": "--cp-shadow", "value": "0 24px 70px rgba(16, 34, 56, 0.10)", "purpose": "Ombre réellement appliquée à .contact-form dans le thème clair ; pas au folio ni aux rôles." },
+      { "name": "--cp-shadow (dark)", "value": "0 24px 70px rgba(0, 0, 0, 0.20)", "purpose": "Surcharge du même jeton sous html[data-theme=\"dark\"], utilisée par le formulaire." }
+    ],
+    "motion": [
+      { "name": "--duration-fast", "value": "180ms", "purpose": "Actions, repères du folio, soulignement de navigation et chevrons de FAQ." },
+      { "name": "--duration-slow", "value": "320ms", "purpose": "Fond, texte et bordure du marqueur de méthode en cours de lecture." },
+      { "name": "--ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Soulignement de navigation et apparition du tracé ; pas easing universel." },
+      { "name": "trace-settle", "value": "1.4s", "purpose": "Une apparition du tracé SVG, stroke-dashoffset de 0.28 à 0 ; SVG masqué à 70rem et moins." },
+      { "name": "prefers-reduced-motion: reduce", "value": "html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: 0ms !important; animation: none !important; }", "purpose": "Règles de réduction du mouvement réellement présentes." }
+    ],
+    "breakpoints": [
+      { "name": "max-width: 70rem — folio vertical, expertises sur deux colonnes, descripteur masqué", "value": "70rem" },
+      { "name": "max-width: 56rem — ouverture sur une colonne, écart 2.5rem ; menu repliable, descripteur réaffiché", "value": "56rem" },
+      { "name": "max-width: 40rem — descripteur masqué, rôles et expertises empilés, méthode non sticky ; textes sans réduction", "value": "40rem" },
+      { "name": "max-width: 24rem — padding horizontal des boutons 0.875rem, navigation ouverte en colonne", "value": "24rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Action de contact de l’ouverture, encre en thème clair et champagne en thème sombre. L’icône reprend le SVG du site.",
+      "html": "<a class=\"ds-button-primary\" href=\"#contact\">Échanger sur vos besoins <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12h14m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+      "css": ".ds-button-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; min-height: 3.25rem; padding: 0.9375rem 1.375rem; border: 1px solid var(--cp-accent); border-radius: var(--radius-control); background: var(--cp-accent); color: var(--cp-accent-fg); font-family: var(--font-body); font-size: var(--text-body); font-weight: 500; line-height: 1.4; text-align: center; text-decoration: none; transition: background var(--duration-fast), border-color var(--duration-fast); } .ds-button-primary:hover { background: var(--cp-accent-hover); border-color: var(--cp-accent-hover); } .ds-button-primary:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-button-primary svg { width: 1.125rem; height: 1.125rem; flex: none; pointer-events: none; } @media (max-width: 40rem) { .ds-button-primary { width: 100%; } } @media (max-width: 24rem) { .ds-button-primary { padding-inline: 0.875rem; } } @media (prefers-reduced-motion: reduce) { .ds-button-primary { transition-duration: 0ms !important; } } @media (forced-colors: active) { .ds-button-primary { border: 1px solid ButtonText; } }"
+    },
+    {
+      "name": "Bouton compact",
+      "kind": "button",
+      "refersTo": "button-small",
+      "description": "Variante de navigation : --text-nav (15px), espacement et padding compacts, mêmes couleurs d’action ; padding horizontal de 0.875rem à 24rem et moins.",
+      "html": "<a class=\"ds-button-small\" href=\"#contact\">Échanger sur vos besoins <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12h14m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+      "css": ".ds-button-small { display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; min-height: 2.875rem; padding: 0.75rem 1rem; border: 1px solid var(--cp-accent); border-radius: var(--radius-control); background: var(--cp-accent); color: var(--cp-accent-fg); font-family: var(--font-body); font-size: var(--text-nav); font-weight: 500; line-height: 1.4; text-align: center; text-decoration: none; transition: background var(--duration-fast), border-color var(--duration-fast); } .ds-button-small:hover { background: var(--cp-accent-hover); border-color: var(--cp-accent-hover); } .ds-button-small:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-button-small svg { width: 1.125rem; height: 1.125rem; flex: none; pointer-events: none; } @media (max-width: 24rem) { .ds-button-small { padding-inline: 0.875rem; } } @media (prefers-reduced-motion: reduce) { .ds-button-small { transition-duration: 0ms !important; } } @media (forced-colors: active) { .ds-button-small { border: 1px solid ButtonText; } }"
+    },
+    {
+      "name": "Rendez-vous indisponible",
+      "kind": "button",
+      "refersTo": "button-outline-disabled",
+      "description": "Seule instance du bouton contour : désactivée, sans URL ni calendrier connecté. Les états CSS sont extraits, pas une activation de réservation.",
+      "html": "<button class=\"ds-button-outline\" type=\"button\" disabled aria-describedby=\"ds-appointment-note\">Prendre rendez-vous <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 12h14m-6-6 6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button><p class=\"ds-appointment-note\" id=\"ds-appointment-note\">Le lien de réservation sera ajouté avant la mise en ligne. Aucun calendrier n’est connecté à cette version.</p>",
+      "css": ".ds-button-outline { display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; min-height: 3.25rem; padding: 0.9375rem 1.375rem; border: 1px solid var(--cp-border-control); border-radius: var(--radius-control); background: var(--cp-surface); color: var(--cp-text); font-family: var(--font-body); font-size: var(--text-body); font-weight: 500; line-height: 1.4; text-align: center; transition: background var(--duration-fast), border-color var(--duration-fast); } .ds-button-outline:hover { background: var(--cp-bg-elevated); border-color: var(--cp-text); } .ds-button-outline:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-button-outline:disabled { background: var(--cp-bg); color: var(--cp-text-muted); border-color: var(--cp-border-control); cursor: not-allowed; } .ds-button-outline svg { width: 1.125rem; height: 1.125rem; flex: none; pointer-events: none; } .ds-appointment-note { margin: 0.875rem 0 0; max-width: 39ch; font-family: var(--font-body); font-size: var(--text-small); line-height: 1.75; color: var(--cp-text-muted); } @media (max-width: 24rem) { .ds-button-outline { padding-inline: 0.875rem; } } @media (prefers-reduced-motion: reduce) { .ds-button-outline { transition-duration: 0ms !important; } } @media (forced-colors: active) { .ds-button-outline { border: 1px solid ButtonText; } }"
+    },
+    {
+      "name": "Lien textuel à flèche",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Lien d’action de l’ouverture à --text-body (16px) ; survol par épaississement du soulignement, sans changement en accent. Ne représente pas le lien iconique de légende mobile.",
+      "html": "<a class=\"ds-text-link\" href=\"#methode\">Découvrir notre méthode <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M12 4v16m-6-6 6 6 6-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+      "css": ".ds-text-link { display: inline-flex; align-items: center; gap: 0.75rem; min-height: 2.75rem; color: var(--cp-text); font-family: var(--font-body); font-size: var(--text-body); font-weight: 500; line-height: 1.75; text-decoration-thickness: 1px; text-underline-offset: 0.25em; } .ds-text-link:hover { text-decoration-thickness: 2px; } .ds-text-link:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-text-link svg { width: 1.125rem; height: 1.125rem; flex: none; pointer-events: none; }"
+    },
+    {
+      "name": "Champ e-mail",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "État après activation de la démonstration par JavaScript. Extrait sans soumission ni validation ajoutée ; erreurs en danger, rayon propre aux champs.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Votre e-mail professionnel</label><input type=\"email\" id=\"ds-email\" name=\"email\" autocomplete=\"email\" required maxlength=\"254\" aria-describedby=\"ds-email-error\"><p class=\"ds-field-error\" id=\"ds-email-error\" hidden></p></div>",
+      "css": ".ds-field { margin-bottom: 1.25rem; color: var(--cp-text); font-family: var(--font-body); line-height: 1.75; } .ds-field label { display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: var(--text-body); } .ds-field input { width: 100%; border: 1px solid var(--cp-border-control); border-radius: 0.375rem; background: var(--cp-surface-soft); color: var(--cp-text); padding: 0.75rem; min-height: 3rem; font-family: var(--font-body); font-weight: 400; font-size: 1rem; line-height: 1.75; caret-color: var(--cp-accent); } .ds-field input:hover { border-color: var(--cp-text); } .ds-field input:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-field input[aria-invalid=\"true\"] { border-color: var(--cp-danger); border-width: 2px; padding: calc(0.75rem - 1px); } .ds-field-error { display: block; margin: 0.4375rem 0 0; font-size: var(--text-small); line-height: 1.65; color: var(--cp-danger); font-weight: 500; } .ds-field-error[hidden] { display: none !important; }"
+    },
+    {
+      "name": "Navigation — liens ouverts",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Extrait des trois liens réels à l’état ouvert ; l’action compacte est montrée séparément. Aucun contrôleur de menu ni état courant inventé.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigation principale\"><a class=\"ds-nav-link\" href=\"#accompagnement\">L’accompagnement</a><a class=\"ds-nav-link\" href=\"#methode\">Notre méthode</a><a class=\"ds-nav-link\" href=\"#equipe\">L’équipe</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 1.75rem; color: var(--cp-text); font-family: var(--font-body); line-height: 1.75; } .ds-nav-link { display: flex; align-items: center; min-height: 2.75rem; font-size: var(--text-nav); font-weight: 400; color: inherit; text-decoration: none; position: relative; } .ds-nav-link::after { content: ''; position: absolute; height: 1px; inset: auto 0 0.25rem; background: var(--cp-text); transform: scaleX(0); transform-origin: left; transition: transform var(--duration-fast) var(--ease-out); } .ds-nav-link:hover::after, .ds-nav-link[aria-current=\"location\"]::after { transform: scaleX(1); } .ds-nav-link:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } @media (max-width: 70rem) { .ds-nav { gap: 1.125rem; } } @media (max-width: 56rem) { .ds-nav { width: 100%; flex-wrap: wrap; padding-block: 0.5rem 1rem; gap: 0.375rem 1.5rem; } } @media (max-width: 24rem) { .ds-nav { flex-direction: column; align-items: stretch; padding-top: 1rem; } } @media (prefers-reduced-motion: reduce) { .ds-nav-link::after { transition-duration: 0ms !important; } }"
+    },
+    {
+      "name": "Exemple de compte-rendu",
+      "kind": "card",
+      "refersTo": "report-preview",
+      "description": "Structure à adapter, sans données d’apprenti. Fond minéral, rayon de contrôle, sans bordure ni ombre ; lignes empilées dès 56rem.",
+      "html": "<figure class=\"ds-report-preview\"><figcaption>Exemple de structure — à adapter avec votre école</figcaption><dl><div><dt>Progression</dt><dd>Ce qui a évolué depuis le dernier point.</dd></div><div><dt>Points d’attention</dt><dd>Ce qui appelle un échange.</dd></div><div><dt>Prochaines étapes</dt><dd>Ce qui reste à accompagner.</dd></div></dl></figure>",
+      "css": ".ds-report-preview { margin: 1.5rem 0 0; padding: 1.5rem; border-radius: var(--radius-control); background: var(--cp-bg); color: var(--cp-text); font-family: var(--font-body); font-weight: 400; line-height: 1.75; } .ds-report-preview figcaption { font-size: var(--text-small); color: var(--cp-text-muted); margin-bottom: 1rem; } .ds-report-preview dl { display: grid; gap: 0.75rem; margin: 0; } .ds-report-preview dl > div { display: grid; grid-template-columns: 1fr 1.45fr; gap: 1rem; font-size: var(--text-small); line-height: 1.65; } .ds-report-preview dt { font-weight: 500; } .ds-report-preview dd { margin: 0; color: var(--cp-text-muted); } @media (max-width: 56rem) { .ds-report-preview { padding: 1rem; } .ds-report-preview dl > div { grid-template-columns: 1fr; gap: 0.125rem; } } @media (max-width: 40rem) { .ds-report-preview { padding: 1rem 0.875rem; } }"
+    },
+    {
+      "name": "Folio — quatre liens en vue tablette",
+      "kind": "custom",
+      "refersTo": "hero-folio",
+      "description": "Extrait des quatre liens, dans leur variante verticale à 40rem < largeur ≤ 56rem. Habillage encre, filet et repères champagne ; le SVG alterné grand écran reste dans la source. Pas de statut d’apprenti.",
+      "html": "<div class=\"ds-folio-links\"><ol class=\"ds-path-list\"><li><a class=\"ds-path-link\" href=\"#diagnostic\"><span class=\"ds-path-number\" aria-hidden=\"true\">01</span><span><strong>Diagnostic</strong><small>Définir le cap.</small></span></a></li><li><a class=\"ds-path-link\" href=\"#tutorat\"><span class=\"ds-path-number\" aria-hidden=\"true\">02</span><span><strong>Accompagnement</strong><small>Avancer ensemble.</small></span></a></li><li><a class=\"ds-path-link\" href=\"#suivi\"><span class=\"ds-path-number\" aria-hidden=\"true\">03</span><span><strong>Suivi continu</strong><small>Garder le lien.</small></span></a></li><li><a class=\"ds-path-link\" href=\"#reporting\"><span class=\"ds-path-number\" aria-hidden=\"true\">04</span><span><strong>Reporting école</strong><small>Partager la progression.</small></span></a></li></ol></div>",
+      "css": ".ds-folio-links { padding: 1.5rem 1.125rem; border-radius: var(--radius-panel); background: var(--cp-ink); color: var(--cp-on-ink); font-family: var(--font-body); line-height: 1.75; } .ds-path-list { margin: 0; padding: 0; list-style: none; position: relative; display: grid; gap: 1rem; } .ds-path-list::before { content: ''; position: absolute; width: 1px; left: 1.125rem; top: 1rem; bottom: 1rem; background: var(--cp-champagne); } .ds-path-list li { position: relative; } .ds-path-link { display: flex; align-items: center; gap: 0.75rem; min-height: 3rem; color: inherit; text-decoration: none; } .ds-path-link > span:not(.ds-path-number) { min-width: 0; background: var(--cp-ink); overflow-wrap: anywhere; } .ds-path-number { display: grid; place-items: center; flex: none; width: 2.25rem; height: 2.25rem; border: 1px solid var(--cp-champagne); border-radius: 50%; background: var(--cp-ink); color: var(--cp-champagne); font-size: var(--text-small); font-weight: 500; font-variant-numeric: tabular-nums; transition: background var(--duration-fast), color var(--duration-fast); } .ds-path-link strong { display: block; font-size: var(--text-body); font-weight: 500; line-height: 1.4; } .ds-path-link small { display: block; margin-top: 0.25rem; font-size: var(--text-small); line-height: 1.5; color: var(--cp-ink-muted); } .ds-path-link:hover .ds-path-number, .ds-path-link:focus-visible .ds-path-number { background: var(--cp-champagne); color: var(--cp-ink); } .ds-path-link:focus-visible { outline: 3px solid var(--cp-champagne); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-path-number { transition-duration: 0ms !important; } } @media (forced-colors: active) { .ds-path-number { border: 1px solid ButtonText; } .ds-path-list::before { background: CanvasText; } }"
+    },
+    {
+      "name": "Méthode — repère de lecture courant",
+      "kind": "custom",
+      "refersTo": "method-marker-current",
+      "description": "Extrait du titre Diagnostic et de son marqueur is-current, sans reconstituer toute la méthode ni son observateur. État de lecture, jamais résultat métier.",
+      "html": "<article class=\"ds-method-step ds-is-current\"><span class=\"ds-step-marker\" aria-hidden=\"true\">01</span><div class=\"ds-step-title\"><h3>Diagnostic</h3><p>Partir du bon point.</p></div></article>",
+      "css": ".ds-method-step { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 0.625rem 1.5rem; padding-block: 1rem 2.5rem; color: var(--cp-text); font-family: var(--font-body); line-height: 1.75; } .ds-step-marker { display: grid; place-items: center; width: 3rem; height: 3rem; border: 1px solid var(--cp-border-strong); border-radius: 50%; background: var(--cp-surface); color: var(--cp-text-muted); font-size: var(--text-small); font-variant-numeric: tabular-nums; transition: background var(--duration-slow), color var(--duration-slow), border-color var(--duration-slow); } .ds-method-step.ds-is-current .ds-step-marker { background: var(--cp-ink); color: var(--cp-champagne); border-color: var(--cp-ink); } .ds-step-title { padding-top: 0.25rem; } .ds-step-title h3 { margin: 0; font-family: var(--font-body); font-size: 1.375rem; font-weight: 500; line-height: 1.3; letter-spacing: -0.025em; text-wrap: balance; } .ds-step-title p { margin: 0.375rem 0 0; font-size: var(--text-small); color: var(--cp-text-soft); } @media (max-width: 56rem) { .ds-method-step { column-gap: 1rem; } } @media (max-width: 40rem) { .ds-method-step { grid-template-columns: 2.5rem minmax(0, 1fr); gap: 0.75rem; padding-bottom: 1.5rem; } .ds-step-marker { width: 2.5rem; height: 2.5rem; } .ds-step-title h3 { font-size: 1.125rem; } } @media (prefers-reduced-motion: reduce) { .ds-step-marker { transition-duration: 0ms !important; } } @media (forced-colors: active) { .ds-step-marker { border: 1px solid ButtonText; } }"
+    },
+    {
+      "name": "Question fréquente native",
+      "kind": "custom",
+      "refersTo": "faq-item",
+      "description": "details/summary utilisable sans JavaScript ; chevron fin et survol champagne sombre, sans état applicatif supplémentaire.",
+      "html": "<div class=\"ds-faq-list\"><details><summary>À qui s’adresse votre accompagnement&nbsp;?</summary><p>Nous nous adressons aux écoles d’ingénieurs qui souhaitent être accompagnées dans le suivi académique de leurs étudiants en apprentissage. Il s’agit d’un partenariat avec l’école, et non d’une offre de cours particuliers.</p></details></div>",
+      "css": ".ds-faq-list { border-top: 1px solid var(--cp-border-strong); color: var(--cp-text); font-family: var(--font-body); font-weight: 400; line-height: 1.75; } .ds-faq-list details { border-bottom: 1px solid var(--cp-border); } .ds-faq-list summary { display: flex; align-items: center; justify-content: space-between; list-style: none; gap: 1.5rem; padding-block: 1.375rem; min-height: 3.5rem; font-size: var(--text-body); font-weight: 500; line-height: 1.65; cursor: pointer; } .ds-faq-list summary::-webkit-details-marker { display: none; } .ds-faq-list summary::after { content: ''; width: 0.625rem; height: 0.625rem; flex: none; border-right: 1px solid var(--cp-text); border-bottom: 1px solid var(--cp-text); transform: rotate(45deg); transition: transform var(--duration-fast); margin-right: 0.375rem; } .ds-faq-list details[open] summary::after { transform: rotate(225deg); } .ds-faq-list summary:hover { color: var(--cp-champagne-dark); } .ds-faq-list summary:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-faq-list details p { margin: 0; max-width: 68ch; color: var(--cp-text-muted); padding-bottom: 1.5rem; padding-right: 2rem; font-size: var(--text-body); } @media (max-width: 40rem) { .ds-faq-list summary { padding-block: 1.125rem; } .ds-faq-list details p { padding-right: 1rem; } } @media (prefers-reduced-motion: reduce) { .ds-faq-list summary::after { transition-duration: 0ms !important; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le folio de suivi",
+    "overview": "La refonte premium remplace le rendu initial explicitement rejeté par l’utilisateur. La direction déléguée associe bleu encre, blanc minéral et touches champagne, dans une composition graphique sans photo. Tutelia reste une vitrine de tutorat académique pour les écoles d’ingénieurs, pas une plateforme de suivi.\n\nLe folio de suivi donne un cadre éditorial à la méthode réelle : grands titres serif, quatre étapes reliées et compositions ouvertes. Le contraste des séquences sombres et les filets structurent la lecture ; les repères de lecture ne représentent aucune donnée d’apprenti. La passe de confort de lecture autorisée par « c’est parti » conserve familles, couleurs, tailles de titres et faits métier ; elle ajuste les textes par rôle et l’ouverture responsive.\n\nRevue historique, antérieure à la passe de lecture : le verdict SHIP rapporté le 2026-09-09 concernait uniquement la prévisualisation locale alors examinée par un généraliste sur neuf captures. Il ne constitue pas une nouvelle revue de l’état actuel, une validation de production, une certification d’accessibilité ou une approbation finale de l’utilisateur. État courant rapporté de la passe principale : 30 tests navigateur et 16 tests serveur réussis, deux tests serveur ignorés sous Windows. Aucun test ni commande n’est relancé pendant cette mise à jour documentaire ; aucun déploiement. Captures actuelles existantes dans .impeccable/review/reading/, sans nouvelle inspection visuelle ici.\n\nLes dix extraits sont dérivés de site/assets/css/styles.css et héritent des variables de site/assets/css/theme.css ; sélecteurs ds- adaptés pour l’aperçu, sans contrôleurs réimplémentés. Les titres et la taille de saisie littérale restent inchangés ; les extraits ne sont pas exécutés pendant cette passe documentaire.",
+    "keyCharacteristics": [
+      "Bleu encre et surfaces minérales, champagne contextualisé, variante sombre implémentée.",
+      "Libre Bodoni 400 normale/italique et Public Sans 400/500/600, auto-hébergées.",
+      "Folio à quatre étapes, rôles ouverts, introduction latérale de méthode et soutenance sombre ; charte conservée après le retour positif de l’utilisateur.",
+      "Lecture : --text-small 14px, --text-nav 15px, --text-body 16px et --text-intro 16–18px pour une base de 16px ; boutons 16px/compacts 15px, libellés de champs 16px/mentions facultatives 14px. Familles, couleurs et tailles de titres conservées.",
+      "Ouverture sur une colonne dès 56rem, écart 2.5rem. Descripteur de marque à 12px, visible au-dessus de 70rem et à 40rem < largeur ≤ 56rem ; masqué à 40rem et moins. Padding horizontal des boutons à 0.875rem à 24rem et moins.",
+      "Folio grand écran : diagramme 21.5rem, positions verticales 0/5/11/16rem, éléments larges de 55%, colonne droite à left: 45%. Panneaux de texte sur --cp-ink avec min-width: 0 et overflow-wrap: anywhere ; libellés 16px et sous-libellés 14px. Liste verticale dès 70rem et moins.",
+      "Mention statique « Plus de 300 apprentis déjà suivis » fournie par l’utilisateur, sous les actions d’accueil : filet discret, volume Libre Bodoni 1.75rem (28px) et libellé Public Sans --text-body (16px), sans compteur animé ni nouveau fait métier.",
+      "Sept domaines nommés : Informatique, Mécanique, Intelligence artificielle, Gestion de projet, Cybersécurité, Biotechnologie et Santé. Grille d’expertises sur quatre colonnes, deux à 70rem et moins, une à 40rem et moins ; pictogrammes décoratifs champagne, sans nouvelles cartes.",
+      "Aucune photo, aucun portrait ni preuve client inventée."
+    ],
+    "rules": [
+      { "name": "Contextual Contrast", "body": "Distinguer le champagne sur encre, le champagne sombre sur fond clair et la couleur d’erreur ; conserver les rôles du thème actif.", "section": "colors" },
+      { "name": "Editorial Hierarchy", "body": "Les styles `h1`/`h2` utilisent Libre Bodoni 400 ; `h3` utilise Public Sans 500, sauf le titre du formulaire en Libre Bodoni 400.", "section": "typography" },
+      { "name": "Targeted Depth", "body": "Réserver l’ombre observée au formulaire de contact ; structurer le folio, les rôles et la méthode par leurs fonds et filets.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do — Reprendre les variables du thème actif, les fontes livrées et les seuils de la source.",
+      "Do — Préserver les quatre étapes réelles et le contenu sans mouvement ni JavaScript.",
+      "Do — Garder explicites la démonstration locale, le rendez-vous indisponible et le contact non connecté."
+    ],
+    "donts": [
+      "Don't — Réintroduire la charte rejetée, des photos ou des preuves métier inventées.",
+      "Don't — Confondre repère de lecture et statut d’apprenti, ou validation locale et envoi.",
+      "Don't — Étendre SHIP au-delà de l’aperçu local ou le présenter comme une certification ou une approbation finale.",
+      "Don't — Créer des gammes de couleurs, fontes, géométries ou composants absents des sources."
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tutelia-vitrine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vitrine locale de tutorat académique pour les écoles d’ingénieurs.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "check": "node --check site/assets/js/theme.js && node --check site/assets/js/main.js && html-validate \"site/**/*.html\"",
+    "test": "playwright test",
+    "test:unit": "node --test tests/server.test.mjs",
+    "verify": "npm run check && npm run build && npm run test:unit && npm test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@fontsource/libre-bodoni": "5.3.0",
+    "@fontsource/public-sans": "5.3.0",
+    "@playwright/test": "1.63.0",
+    "html-validate": "11.12.0"
+  }
+}

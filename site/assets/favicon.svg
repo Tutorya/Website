@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <!-- Valeurs des tokens encre / champagne en attributs de présentation
+      pour cette image indépendante sans CSS inline sous CSP. -->
+    <rect width="64" height="64" rx="14" fill="#142b45"/>
+    <path d="M22 14v26c0 9 6 12 13 12h8M12 24h37" fill="none" stroke="#ddc9a3" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="22" cy="14" r="3" fill="#ddc9a3"/>
+    <circle cx="43" cy="52" r="3" fill="#ddc9a3"/>
+</svg>

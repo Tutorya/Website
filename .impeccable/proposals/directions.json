@@ -1,0 +1,155 @@
+{
+  "title": "Tutelia — choisir une direction",
+  "question": "Proposition visuelle uniquement : compare les couleurs et les schémas, pas un site final. A met en scène les trois acteurs ; B, recommandée, explique votre méthode ; C assume un langage d’atelier. Choisir une piste ne lance ni développement ni publication. Tu peux aussi répondre A, B ou C dans la conversation.",
+  "buildPath": { "value": "code", "toggle": false },
+  "options": [
+    {
+      "id": "coordination",
+      "label": "A · La table de coordination",
+      "kicker": "UNE RELATION À TROIS",
+      "lineage": "La réunion école · apprenti · entreprise",
+      "thesis": "Un tuteur académique pour relier les trois acteurs de l’apprentissage.",
+      "palette": ["#FFFFFF", "#F5F5F5", "#242424", "#B11F4B", "#DEDEDE"],
+      "materials": ["Composition ouverte", "Géométrie des rôles", "Barlow + Source Sans 3"],
+      "viewport": "La promesse à gauche, les trois acteurs reliés au tuteur à droite, puis un contact immédiatement visible.",
+      "case": "Rend votre rôle collectif concret ; les missions donnent du sens au schéma.",
+      "risk": "Le lien graphique ne doit pas remplacer l’explication de ce que fait réellement le tuteur.",
+      "raised": [
+        { "from": "Archive numérique", "raise": "Chaque sujet se rejoint directement depuis une navigation courte." },
+        { "from": "Mosaïque d’information", "raise": "Chaque acteur reçoit une responsabilité explicite, sans zone floue." },
+        { "from": "Composition illustrée", "raise": "Le schéma des rôles occupe une vraie place, pas une vignette décorative." },
+        { "from": "Signalétique industrielle", "raise": "Les liens nomment leur destination : méthode, équipe, contact." },
+        { "from": "Univers immersif", "raise": "La relation reste continue entre les sections, sans effets lumineux." }
+      ],
+      "wireframe": {
+        "cols": 12, "rows": 11,
+        "regions": [
+          { "label": "TUTELIA · Accompagnement · Méthode · Contact", "x": 0, "y": 0, "w": 12, "h": 1 },
+          { "label": "Un suivi académique attentif, de l’entreprise à la soutenance.", "x": 0, "y": 2, "w": 6, "h": 3 },
+          { "label": "Une équipe de tuteurs aux côtés des écoles d’ingénieurs.", "x": 0, "y": 5, "w": 6, "h": 2 },
+          { "label": "Échanger sur vos besoins", "x": 0, "y": 8, "w": 6, "h": 2, "accent": true },
+          { "label": "L’ÉCOLE", "x": 7, "y": 2, "w": 5, "h": 2 },
+          { "label": "LE TUTEUR", "x": 7, "y": 5, "w": 5, "h": 2, "accent": true },
+          { "label": "L’APPRENTI", "x": 7, "y": 8, "w": 2, "h": 2 },
+          { "label": "L’ENTREPRISE", "x": 9, "y": 8, "w": 3, "h": 2 }
+        ]
+      }
+    },
+    {
+      "id": "progression",
+      "label": "B · Le fil de progression",
+      "kicker": "RECOMMANDATION",
+      "lineage": "Le parcours d’apprentissage et son suivi",
+      "thesis": "Votre méthode devient le fil conducteur de la page, du diagnostic au reporting école.",
+      "palette": ["#FCFBF8", "#F7F4EF", "#242424", "#B11F4B", "#5C5C5C"],
+      "materials": ["Parcours continu", "Titres affirmés", "Barlow + Source Sans 3"],
+      "viewport": "Une grande promesse et le contact ouvrent la page ; un fil relie ensuite vos quatre étapes réelles.",
+      "case": "Explique directement votre accompagnement sans faux chiffres, faux témoignages ou tableau de bord.",
+      "risk": "La frise est familière : sa qualité dépendra des contenus concrets et du soin de la composition.",
+      "wireframe": {
+        "cols": 12, "rows": 12,
+        "regions": [
+          { "label": "TUTELIA · Accompagnement · Méthode · Équipe · Contact", "x": 0, "y": 0, "w": 12, "h": 1 },
+          { "label": "Un suivi académique attentif, de l’entreprise à la soutenance.", "x": 0, "y": 2, "w": 8, "h": 3 },
+          { "label": "Échanger sur vos besoins", "x": 9, "y": 2, "w": 3, "h": 3, "accent": true },
+          { "label": "Tutorat personnalisé · Lien avec l’entreprise · Comptes-rendus pour l’école", "x": 0, "y": 5, "w": 12, "h": 2 },
+          { "label": "Diagnostic", "x": 0, "y": 8, "w": 3, "h": 2, "accent": true },
+          { "label": "Accompagnement", "x": 3, "y": 8, "w": 3, "h": 2 },
+          { "label": "Suivi continu", "x": 6, "y": 8, "w": 3, "h": 2 },
+          { "label": "Reporting école", "x": 9, "y": 8, "w": 3, "h": 2 },
+          { "label": "Une équipe, aux côtés de vos apprentis", "x": 0, "y": 11, "w": 12, "h": 1 }
+        ]
+      }
+    },
+    {
+      "id": "operate-b-normalled-jackfield",
+      "label": "C · L’atelier de suivi",
+      "kicker": "ALTERNATIVE TECHNIQUE",
+      "lineage": "Le tableau de connexions d’un atelier",
+      "thesis": "Des étapes alignées et reliées rendent le suivi aussi lisible qu’un plan de raccordement.",
+      "palette": ["#0A0A0A", "#FFB000", "#7A5200", "#FFFFFF"],
+      "materials": ["Noir et ambre", "Repères alignés", "Barlow Condensed + Barlow"],
+      "viewport": "Une navigation latérale, une promesse nette et quatre lignes de suivi ; le contact est un aplat ambre.",
+      "case": "Forte identification à l’ingénierie, mais votre service humain doit rester plus clair qu’une interface technique.",
+      "verdict": "competitive",
+      "risk": "Peut évoquer un logiciel industriel ; moins naturel pour une future ouverture aux écoles de commerce.",
+      "hero": ".impeccable/references/atelier-inspiration-detail.webp",
+      "board": ".impeccable/references/atelier-inspiration.webp",
+      "wireframe": {
+        "cols": 12, "rows": 10,
+        "regions": [
+          { "label": "TUTELIA · Missions · Méthode · Contact", "x": 0, "y": 0, "w": 2, "h": 10 },
+          { "label": "Le lien entre l’école, l’apprenti et l’entreprise.", "x": 3, "y": 0, "w": 9, "h": 3 },
+          { "label": "01 · Diagnostic", "x": 3, "y": 4, "w": 9, "h": 1 },
+          { "label": "02 · Accompagnement", "x": 3, "y": 5, "w": 9, "h": 1 },
+          { "label": "03 · Suivi continu", "x": 3, "y": 6, "w": 9, "h": 1 },
+          { "label": "04 · Reporting école", "x": 3, "y": 7, "w": 9, "h": 1 },
+          { "label": "Échanger sur vos besoins", "x": 3, "y": 9, "w": 9, "h": 1, "accent": true }
+        ]
+      }
+    },
+    {
+      "id": "broadcast-programming-teletext-service",
+      "label": "Archive numérique",
+      "thesis": "Présenter le tutorat comme un magazine télétexte à rubriques directes.",
+      "palette": ["#000000", "#FFFFFF", "#FFFF00", "#00FFFF"],
+      "materials": ["Grille de caractères", "Repères de rubrique"],
+      "viewport": "Un sommaire numéroté, une promesse et un contact affichés sur une grille rétro.",
+      "case": "L’esthétique rétro brouille l’identification à une équipe de tuteurs et la lecture de l’offre.",
+      "verdict": "declined",
+      "kept": "Conserver l’accès direct aux rubriques, sans le langage télétexte.",
+      "risk": "Une contrainte de grille peu adaptée aux textes français et au mobile."
+    },
+    {
+      "id": "japanese-high-density-web",
+      "label": "Mosaïque d’information",
+      "thesis": "Rassembler les missions, les étapes et les contacts en un tableau de petits modules.",
+      "palette": ["#FFFFFF", "#111111", "#C82828", "#E5E5E5"],
+      "materials": ["Modules serrés", "Onglets rouges"],
+      "viewport": "Toutes les informations de la prestation se partagent le premier écran.",
+      "case": "La densité ne sert ni le peu de contenu confirmé ni la compréhension rapide du rôle du tuteur.",
+      "verdict": "declined",
+      "kept": "Conserver une couverture claire des responsabilités, sans multiplier les boîtes.",
+      "risk": "Surcharge cognitive et texte trop petit."
+    },
+    {
+      "id": "pop-culture-shelf-lowbrow-gallery-panel",
+      "label": "Composition illustrée",
+      "thesis": "Réunir les acteurs du tutorat dans une grande scène illustrée très expressive.",
+      "palette": ["#FF5E3A", "#F8D92E", "#3C92BA", "#111111"],
+      "materials": ["Aplats saturés", "Contours marqués"],
+      "viewport": "Les figures et les rôles occupent le premier écran autour du titre et du contact.",
+      "case": "Le spectacle graphique prendrait le pas sur l’identification professionnelle et sur la prestation.",
+      "verdict": "declined",
+      "kept": "Conserver un élément central assumé plutôt qu’une accumulation de petites décorations.",
+      "risk": "Tonalité trop ludique pour l’offre exprimée."
+    },
+    {
+      "id": "textiles-weave-drape-fashion-industrial-quote-grammar",
+      "label": "Signalétique industrielle",
+      "thesis": "Nommer chaque mission par une grande étiquette et une signalétique de chantier.",
+      "palette": ["#FFFFFF", "#111111", "#FF6700"],
+      "materials": ["Étiquettes", "Diagonales", "Capitales industrielles"],
+      "viewport": "De grands intitulés balisent les missions puis une étiquette orange mène au contact.",
+      "case": "L’univers de mode et de chantier détourne du partenariat pédagogique et de la lecture du service.",
+      "verdict": "declined",
+      "kept": "Conserver des intitulés littéraux et immédiatement compréhensibles.",
+      "risk": "Des codes visuels d’alerte pour un service d’accompagnement."
+    },
+    {
+      "id": "dream-surreal-impossible-worlds-luminescent-alien-understory",
+      "label": "Univers immersif",
+      "thesis": "Relier les acteurs par des chemins lumineux dans une scène immersive.",
+      "palette": ["#090D10", "#6DE7E3", "#B69BE5", "#C2E8A7"],
+      "materials": ["Réseaux lumineux", "Profondeur", "Lumière de proximité"],
+      "viewport": "La promesse et le contact apparaissent dans un réseau de relations lumineuses.",
+      "case": "La scène imaginaire éloigne du monde de l’école et détourne l’attention du tutorat.",
+      "verdict": "declined",
+      "kept": "Conserver la continuité entre les acteurs et les passages de la page.",
+      "risk": "Effets lourds et perte de lisibilité pour une vitrine simple."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "canon": true,
+  "steer": true
+}
