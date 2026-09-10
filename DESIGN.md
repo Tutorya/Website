@@ -1,6 +1,6 @@
 ---
 author: GitHub Copilot
-name: Tutelia — Le folio de suivi
+name: Tutorya — Le folio de suivi
 description: Relevé du système premium après la passe de confort de lecture ; familles, couleurs et titres conservés, périmètre local sans déploiement.
 last_changed: 2026-09-09
 colors:
@@ -153,7 +153,7 @@ components:
     textColor: "{colors.cp-text}"
 ---
 
-# Tutelia — design de la refonte premium
+# Tutorya — design de la refonte premium
 
 **Sommaire** — [Vue d’ensemble](#overview) · [Couleurs](#colors) · [Typographie](#typography) · [Mise en page](#layout) · [Relief](#elevation--depth) · [Formes](#shapes) · [Composants](#components) · [Garde-fous](#dos-and-donts)
 
@@ -161,7 +161,7 @@ components:
 
 **Creative North Star: "Le folio de suivi"**
 
-La refonte premium remplace le rendu initial explicitement rejeté par l’utilisateur. La direction déléguée associe bleu encre, blanc minéral et touches champagne, dans une composition graphique sans photo. Tutelia reste une vitrine de tutorat académique pour les écoles d’ingénieurs, pas une plateforme de suivi.
+La refonte premium remplace le rendu initial explicitement rejeté par l’utilisateur. La direction déléguée associe bleu encre, blanc minéral et touches champagne, dans une composition graphique sans photo. Tutorya reste une vitrine de tutorat académique pour les écoles d’ingénieurs, pas une plateforme de suivi.
 
 Le folio de suivi donne un cadre éditorial à la méthode réelle : grands titres serif, quatre étapes reliées et compositions ouvertes. Le contraste des séquences sombres et les filets structurent la lecture ; les repères de lecture ne représentent aucune donnée d’apprenti.
 
@@ -259,7 +259,7 @@ La profondeur repose surtout sur les surfaces et les filets, mais **le formulair
 
 - **Panneaux :** rayon `panel` pour le folio et le formulaire ; rayon `control` pour les boutons, le compte-rendu et les messages du formulaire. Les champs ont leur propre rayon `field`, littéral dans le CSS.
 - **Repères :** cercles de 2.25rem dans le folio ; cercles de 3rem dans la méthode, réduits à 2.5rem à 40rem et moins. Le filet vertical de méthode mesure 1px, pas 2px.
-- **Graphisme :** tracé SVG et pictogrammes en traits, sans photographie. Les rôles sont des colonnes ouvertes séparées par des filets, pas des cartes arrondies. Le signe de marque reste provisoire, comme le nom Tutelia.
+- **Graphisme :** tracé SVG et pictogrammes en traits, sans photographie. Les rôles sont des colonnes ouvertes séparées par des filets, pas des cartes arrondies. Le signe de marque reste provisoire, comme le nom Tutorya.
 
 ## Components
 

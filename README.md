@@ -1,4 +1,4 @@
-# Tutelia — première version locale
+# Tutorya — première version locale
 
 Vitrine française de tutorat académique pour les écoles d’ingénieurs, construite en HTML, CSS et JavaScript natif. Le **fil de progression B** est conservé dans une refonte premium déléguée : **bleu encre, blanc minéral, accents champagne, Libre Bodoni / Public Sans, sans photo**. Voir [la décision de refonte](docs/refonte-premium.md).
 
@@ -9,7 +9,7 @@ Vitrine française de tutorat académique pour les écoles d’ingénieurs, cons
 Prérequis local : Node.js 22 ou supérieur. L’environnement a été vérifié avec Node.js 24.13.1 et npm 11.8.0.
 
 1. Pour une nouvelle installation, exécuter `npm ci` à la racine du projet.
-2. Dans VS Code, utiliser **Terminal → Exécuter la tâche → Tutelia : aperçu local**, ou `npm run dev`.
+2. Dans VS Code, utiliser **Terminal → Exécuter la tâche → Tutorya : aperçu local**, ou `npm run dev`.
 3. Consulter [l’aperçu local](http://127.0.0.1:4173/).
 4. Modifier les sources, attendre le message de reconstruction, puis actualiser le navigateur. Il n’y a pas de rechargement automatique.
 5. Arrêter le serveur avec **Ctrl+C** dans son terminal. Ne pas lancer deux aperçus sur le même port.

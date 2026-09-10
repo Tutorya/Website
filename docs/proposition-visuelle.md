@@ -1,4 +1,4 @@
-# Tutelia — direction B retenue
+# Tutorya — direction B retenue
 
 Proposition du 2026-09-08 · Décision du 2026-09-09 · Nom de travail.
 
@@ -24,7 +24,7 @@ Une école doit comprendre trois choses : vous assurez un tutorat académique, v
 
 ## Historique des trois propositions
 
-La direction B, avec sa palette et son intention typographique, est retenue. Les planches de décision montrent des schémas de structure, pas le rendu final du site. La couleur de l’interface de comparaison ne constitue pas la charte de Tutelia.
+La direction B, avec sa palette et son intention typographique, est retenue. Les planches de décision montrent des schémas de structure, pas le rendu final du site. La couleur de l’interface de comparaison ne constitue pas la charte de Tutorya.
 
 ### A — La table de coordination
 
@@ -68,7 +68,7 @@ La direction B, avec sa palette et son intention typographique, est retenue. Les
 - Mobile : navigation repliée en haut et une seule colonne de contenu ; pas de mouvement ambiant continu.
 - Risque : peut évoquer un logiciel industriel plutôt qu’un accompagnement humain, et se prêter moins facilement à une future cible commerce.
 
-Les références d’atelier visibles sur la planche sont des **inspirations externes**, pas des écrans de Tutelia ni une promesse de fonctionnalité. Elles ne seront pas publiées comme illustrations du site.
+Les références d’atelier visibles sur la planche sont des **inspirations externes**, pas des écrans de Tutorya ni une promesse de fonctionnalité. Elles ne seront pas publiées comme illustrations du site.
 
 ## Message et parcours proposés
 

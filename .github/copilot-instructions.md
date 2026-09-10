@@ -1,4 +1,4 @@
-# Tutelia — instructions de projet
+# Tutorya — instructions de projet
 
 - [x] Verify that the copilot-instructions.md file in the .github directory is created.
 - [x] Clarify Project Requirements — HTML/CSS/JavaScript, direction B validée, première version locale autorisée le 2026-09-09.
@@ -17,7 +17,7 @@
 - Conserver HTML sémantique, CSS et JavaScript natif ; aucune dépendance JavaScript livrée au navigateur.
 - Utiliser les variables --cp-* avec la nouvelle palette bleu encre / blanc minéral / champagne. Typographie de refonte : Libre Bodoni + Public Sans auto-hébergées. Aucune photo demandée ; privilégier une composition géométrique qui explique la méthode.
 - Conserver les rôles de lecture --text-small (14 px), --text-nav (15 px), --text-body (16 px) et --text-intro (16–18 px). Ne pas réintroduire de sous-tailles mobiles pour faire tenir les textes ; adapter la disposition.
-- Ne jamais inventer de client, témoignage, profil, résultat, adresse ou domaine. Tutelia reste un nom de travail.
+- Ne jamais inventer de client, témoignage, profil, résultat, adresse ou domaine. Tutorya reste un nom de travail.
 - Le contact est une démonstration locale sans envoi. Aucune donnée saisie dans les journaux, les URLs ou le stockage navigateur.
 - Ne pas connecter de prestataire, acheter ou publier sans demande explicite. Conserver le noindex jusqu’à la préparation de la version publique.
 - Seuls les fichiers générés dans dist/ sont destinés à un hébergement statique. Ne jamais publier les documents internes ou node_modules/.

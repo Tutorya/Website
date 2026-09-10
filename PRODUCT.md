@@ -1,4 +1,4 @@
-# Tutelia — contexte produit
+# Tutorya — contexte produit
 
 <!-- impeccable:product-schema 1 -->
 
@@ -52,7 +52,7 @@ Le tutorat inclut le suivi avec l’entreprise et les soutenances. Les fréquenc
 
 ## Brand Commitments
 
-- **Tutelia est un nom de travail**, pas une marque définitive.
+- **Tutorya est un nom de travail**, pas une marque définitive.
 - Aucun logo ni site de référence fourni ; aucune identité préexistante à préserver.
 - Direction retenue : **B — Le fil de progression**, validée par « ok on part sur B » le 2026-09-09. Le détail du choix et le brief sont consignés dans [la proposition visuelle](docs/proposition-visuelle.md).
 - **Refonte premium demandée et déléguée le 2026-09-09 :** le rendu initial et sa palette sont remplacés. L’utilisateur valide bleu encre, blanc minéral et accents champagne, avec une composition graphique **sans photo**. Le principe du fil de progression et les faits métier sont conservés ; l’ancienne palette framboise et le duo Barlow / Source Sans 3 ne sont plus des contraintes.

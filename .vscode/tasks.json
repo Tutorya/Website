@@ -2,7 +2,7 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Tutelia : aperçu local",
+			"label": "Tutorya : aperçu local",
 			"type": "shell",
 			"command": "npm run dev",
 			"options": { "cwd": "${workspaceFolder}" },
@@ -10,7 +10,7 @@
 			"problemMatcher": []
 		},
 		{
-			"label": "Tutelia : vérifier",
+			"label": "Tutorya : vérifier",
 			"type": "shell",
 			"command": "npm run verify",
 			"options": { "cwd": "${workspaceFolder}" },
@@ -18,7 +18,7 @@
 			"problemMatcher": []
 		},
 		{
-			"label": "Tutelia : générer les fichiers statiques",
+			"label": "Tutorya : générer les fichiers statiques",
 			"type": "shell",
 			"command": "npm run build",
 			"options": { "cwd": "${workspaceFolder}" },

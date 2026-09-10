@@ -1,4 +1,4 @@
-# Product Marketing Context — Tutelia
+# Product Marketing Context — Tutorya
 
 **Document version:** v7
 **Last updated:** 2026-09-09
@@ -93,7 +93,7 @@ Les formulations ci-dessous proviennent du porteur du projet, pas de témoignage
 
 **Proposition à valider:** Professionnelle, précise, humaine et directe. S’adresser aux écoles avec « vous » et parler de l’équipe avec « nous ».
 
-**Marque:** Tutelia, nom provisoire. Pas de logo ni de charte existante.
+**Marque:** Tutorya, nom provisoire. Pas de logo ni de charte existante.
 
 **Direction actuelle le 2026-09-09 :** le fil de progression B reste le mécanisme narratif, mais le rendu initial a été rejeté. L’utilisateur a délégué une refonte premium bleu encre / blanc minéral / champagne et choisi une composition graphique sans photo ; voir [la décision de refonte](../docs/refonte-premium.md). Ce changement visuel n’ajoute aucune preuve commerciale ni garantie de résultat.
 

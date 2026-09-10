@@ -22,7 +22,7 @@ function assertSecurity(headers) {
 }
 
 async function fixture(t, { serverOptions = {}, startWithServe = false } = {}) {
-  const directory = await mkdtemp(join(tmpdir(), 'tutelia-server-'));
+  const directory = await mkdtemp(join(tmpdir(), 'tutorya-server-'));
   const root = join(directory, 'dist');
   let server;
   t.after(async () => {

@@ -1,5 +1,5 @@
 {
-  "title": "Tutelia — choisir une direction",
+  "title": "Tutorya — choisir une direction",
   "question": "Proposition visuelle uniquement : compare les couleurs et les schémas, pas un site final. A met en scène les trois acteurs ; B, recommandée, explique votre méthode ; C assume un langage d’atelier. Choisir une piste ne lance ni développement ni publication. Tu peux aussi répondre A, B ou C dans la conversation.",
   "buildPath": { "value": "code", "toggle": false },
   "options": [
@@ -24,7 +24,7 @@
       "wireframe": {
         "cols": 12, "rows": 11,
         "regions": [
-          { "label": "TUTELIA · Accompagnement · Méthode · Contact", "x": 0, "y": 0, "w": 12, "h": 1 },
+          { "label": "TUTORYA · Accompagnement · Méthode · Contact", "x": 0, "y": 0, "w": 12, "h": 1 },
           { "label": "Un suivi académique attentif, de l’entreprise à la soutenance.", "x": 0, "y": 2, "w": 6, "h": 3 },
           { "label": "Une équipe de tuteurs aux côtés des écoles d’ingénieurs.", "x": 0, "y": 5, "w": 6, "h": 2 },
           { "label": "Échanger sur vos besoins", "x": 0, "y": 8, "w": 6, "h": 2, "accent": true },
@@ -49,7 +49,7 @@
       "wireframe": {
         "cols": 12, "rows": 12,
         "regions": [
-          { "label": "TUTELIA · Accompagnement · Méthode · Équipe · Contact", "x": 0, "y": 0, "w": 12, "h": 1 },
+          { "label": "TUTORYA · Accompagnement · Méthode · Équipe · Contact", "x": 0, "y": 0, "w": 12, "h": 1 },
           { "label": "Un suivi académique attentif, de l’entreprise à la soutenance.", "x": 0, "y": 2, "w": 8, "h": 3 },
           { "label": "Échanger sur vos besoins", "x": 9, "y": 2, "w": 3, "h": 3, "accent": true },
           { "label": "Tutorat personnalisé · Lien avec l’entreprise · Comptes-rendus pour l’école", "x": 0, "y": 5, "w": 12, "h": 2 },
@@ -78,7 +78,7 @@
       "wireframe": {
         "cols": 12, "rows": 10,
         "regions": [
-          { "label": "TUTELIA · Missions · Méthode · Contact", "x": 0, "y": 0, "w": 2, "h": 10 },
+          { "label": "TUTORYA · Missions · Méthode · Contact", "x": 0, "y": 0, "w": 2, "h": 10 },
           { "label": "Le lien entre l’école, l’apprenti et l’entreprise.", "x": 3, "y": 0, "w": 9, "h": 3 },
           { "label": "01 · Diagnostic", "x": 3, "y": 4, "w": 9, "h": 1 },
           { "label": "02 · Accompagnement", "x": 3, "y": 5, "w": 9, "h": 1 },

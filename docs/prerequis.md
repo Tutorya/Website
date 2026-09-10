@@ -1,4 +1,4 @@
-# Prérequis — site vitrine Tutelia
+# Prérequis — site vitrine Tutorya
 
 Vérification technique initiale du 2026-09-08. Le 2026-09-09 : première version construite, puis refonte premium demandée et déléguée, sans photo. Le fil de progression B est conservé ; l’ancienne charte est remplacée. Voir [la direction actuelle](refonte-premium.md) et [le rapport de vérification](verification.md).
 
@@ -47,7 +47,7 @@ Documentation officielle consultée : [déploiement d’un dépôt sur un héber
 - [x] Public principal identifié : écoles d’ingénieurs.
 - [x] Équipe constituée confirmée.
 - [x] Méthode et missions générales fournies.
-- [x] Marque de travail : Tutelia.
+- [x] Marque de travail : Tutorya.
 - [x] Piste technique et hébergeur envisagé confirmés.
 - [x] Formulaire et/ou rendez-vous souhaités.
 - [x] Direction visuelle B — Le fil de progression validée le 2026-09-09.
