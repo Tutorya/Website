@@ -1,0 +1,3 @@
+# Version de travail : ne pas indexer avant validation et configuration.
+User-agent: *
+Disallow: /

@@ -1,0 +1,17 @@
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Préversion uniquement. Retirer le noindex et adapter robots.txt après
+# validation métier, informations légales et contact fonctionnel.
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "no-referrer"
+  Header always set X-Frame-Options "DENY"
+  Header always set X-Robots-Tag "noindex, nofollow"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+</IfModule>
+
+<FilesMatch "(^\.|\.(env|key|pem|pfx|p12)$)">
+  Require all denied
+</FilesMatch>
