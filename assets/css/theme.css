@@ -1,7 +1,7 @@
 /* Tutorya — refonte premium autorisée le 09/09/2026.
    Les noms sémantiques sont conservés, la palette initiale est remplacée. */
 :root {
-  color-scheme: light;
+  color-scheme: only light;
   --cp-bg: #f4f6f7;
   --cp-bg-elevated: #eaf0f3;
   --cp-surface: #ffffff;
@@ -29,31 +29,6 @@
   --cp-shadow: 0 24px 70px rgba(16, 34, 56, 0.10);
   --cp-selection: #ddc9a3;
   --cp-selection-text: #142b45;
-}
-
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --cp-bg: #101e30;
-  --cp-bg-elevated: #172b41;
-  --cp-surface: #1b3048;
-  --cp-surface-soft: #15273c;
-  --cp-border: #354a60;
-  --cp-border-strong: #698097;
-  --cp-border-control: #8b9fb4;
-  --cp-text: #edf2f6;
-  --cp-text-muted: #b4c3d2;
-  --cp-text-soft: #a9b9ca;
-  --cp-accent: #ddc9a3;
-  --cp-accent-hover: #ecdcbd;
-  --cp-accent-fg: #142b45;
-  --cp-accent-soft: #2d3e50;
-  --cp-champagne-dark: #ddc9a3;
-  --cp-champagne-soft: #303b47;
-  --cp-ink: #102238;
-  --cp-ink-deep: #0b192a;
-  --cp-danger: #ffb2b9;
-  --cp-danger-soft: #3e2938;
-  --cp-shadow: 0 24px 70px rgba(0, 0, 0, 0.20);
 }
 
 @font-face {
